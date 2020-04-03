@@ -5,6 +5,9 @@ import router from './router'
 import App from './App.vue'
 import store from './store'
 
+const createApp = async () => {
+  await store.dispatch('auth/currentUser')
+
 new Vue({
     el: '#app',
     router, // ルーティングの定義を読み込む
@@ -12,3 +15,6 @@ new Vue({
     store,
     template: '<App />' // ルートコンポーネントを描画する
   })
+}
+
+createApp()
