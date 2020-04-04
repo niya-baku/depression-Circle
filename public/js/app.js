@@ -2161,6 +2161,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -20794,32 +20799,22 @@ var render = function() {
             }
           },
           [
-            _vm.registerErrors
+            _vm.loginErrors
               ? _c("div", { staticClass: "errors" }, [
-                  _vm.registerErrors.name
+                  _vm.loginErrors.email
                     ? _c(
                         "ul",
-                        _vm._l(_vm.registerErrors.name, function(msg) {
+                        _vm._l(_vm.loginErrors.email, function(msg) {
                           return _c("li", { key: msg }, [_vm._v(_vm._s(msg))])
                         }),
                         0
                       )
                     : _vm._e(),
                   _vm._v(" "),
-                  _vm.registerErrors.email
+                  _vm.loginErrors.password
                     ? _c(
                         "ul",
-                        _vm._l(_vm.registerErrors.email, function(msg) {
-                          return _c("li", { key: msg }, [_vm._v(_vm._s(msg))])
-                        }),
-                        0
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.registerErrors.password
-                    ? _c(
-                        "ul",
-                        _vm._l(_vm.registerErrors.password, function(msg) {
+                        _vm._l(_vm.loginErrors.password, function(msg) {
                           return _c("li", { key: msg }, [_vm._v(_vm._s(msg))])
                         }),
                         0
@@ -20910,6 +20905,40 @@ var render = function() {
             }
           },
           [
+            _vm.registerErrors
+              ? _c("div", { staticClass: "errors" }, [
+                  _vm.registerErrors.name
+                    ? _c(
+                        "ul",
+                        _vm._l(_vm.registerErrors.name, function(msg) {
+                          return _c("li", { key: msg }, [_vm._v(_vm._s(msg))])
+                        }),
+                        0
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.registerErrors.email
+                    ? _c(
+                        "ul",
+                        _vm._l(_vm.registerErrors.email, function(msg) {
+                          return _c("li", { key: msg }, [_vm._v(_vm._s(msg))])
+                        }),
+                        0
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.registerErrors.password
+                    ? _c(
+                        "ul",
+                        _vm._l(_vm.registerErrors.password, function(msg) {
+                          return _c("li", { key: msg }, [_vm._v(_vm._s(msg))])
+                        }),
+                        0
+                      )
+                    : _vm._e()
+                ])
+              : _vm._e(),
+            _vm._v(" "),
             _c("label", { attrs: { for: "username" } }, [_vm._v("Name")]),
             _vm._v(" "),
             _c("input", {
